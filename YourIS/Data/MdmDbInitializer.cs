@@ -19,10 +19,10 @@ namespace YourIS.Data
                 if (await db.Database.EnsureCreatedAsync())
                 {
                     await InsertTestDataAsync(serviceProvider);
-                    if (createUsers)
-                    {
+                    //if (createUsers)
+                    //{
                         //  await CreateAdminUser(serviceProvider);
-                    }
+                    //}
                 }
             }
         }
@@ -37,7 +37,7 @@ namespace YourIS.Data
                 {
                     var suppliers = new Supplier[]
                     {
-                        new Supplier{Name="Test", SupplierVersion = 0},
+                        new Supplier{Name="Test"},
                     };
 
                     await AddOrUpdateAsync<Supplier>(serviceProvider, g => g.SupplierID, suppliers);

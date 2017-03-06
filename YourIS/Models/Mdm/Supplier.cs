@@ -11,8 +11,6 @@ namespace YourIS.Models.Mdm
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int SupplierID { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public int SupplierVersion { get; set; }
         [Required]
         public string Name { get; set; }
     }
