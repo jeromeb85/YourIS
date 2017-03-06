@@ -7,9 +7,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using YourIS.Models;
-using YourIS.Models.ManageViewModels;
+using YourIS.ViewModels;
+using YourIS.ViewModels.Manage;
 using YourIS.Services;
+using YourIS.Models.Account;
 
 namespace YourIS.Controllers
 {

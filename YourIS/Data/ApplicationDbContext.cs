@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using YourIS.Models;
+using YourIS.ViewModels;
+using YourIS.Models.Account;
 
 namespace YourIS.Data
 {

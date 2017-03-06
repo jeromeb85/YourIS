@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using YourIS.Models;
-using YourIS.Models.AccountViewModels;
 using YourIS.Services;
+using YourIS.Models.Account;
+using YourIS.ViewModels.Account;
 
 namespace YourIS.Controllers
 {

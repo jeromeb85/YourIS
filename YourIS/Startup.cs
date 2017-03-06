@@ -10,8 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using YourIS.Data;
-using YourIS.Models;
+using YourIS.ViewModels;
 using YourIS.Services;
+using YourIS.Models.Account;
 
 namespace YourIS
 {
@@ -43,11 +44,16 @@ namespace YourIS
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDbContext<MdmDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
+
+            services.AddSession();
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
@@ -74,6 +80,8 @@ namespace YourIS
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseSession();
+
             app.UseStaticFiles();
 
             app.UseIdentity();
@@ -86,6 +94,8 @@ namespace YourIS
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            MdmDbInitializer.InitializeAsync(app.ApplicationServices).Wait();
         }
     }
 }
