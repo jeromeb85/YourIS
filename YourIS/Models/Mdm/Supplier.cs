@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 namespace YourIS.Models.Mdm
 {
     public class Supplier
-    {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int SupplierID { get; set; }
-        [Required]
+    {       
+        public int Id { get; set; }        
         public string Name { get; set; }
+        public byte[] Timestamp { get; set; }
     }
 }

@@ -13,6 +13,8 @@ using YourIS.Data;
 using YourIS.ViewModels;
 using YourIS.Services;
 using YourIS.Models.Account;
+using YourIS.Data.Mdm;
+using YourIS.Data.Account;
 
 namespace YourIS
 {
@@ -41,14 +43,14 @@ namespace YourIS
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<AccountDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDbContext<MdmDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<AccountDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
@@ -96,6 +98,7 @@ namespace YourIS
             });
 
             MdmDbInitializer.InitializeAsync(app.ApplicationServices).Wait();
+            AccountDbInitializer.InitializeAsync(app.ApplicationServices).Wait();
         }
     }
 }

@@ -1,0 +1,2 @@
+Add-Migration -Name MdmFirstMigration -OutputDir Data\Mdm\Migrations -Context YourIS.Data.Mdm.MdmDbContext
+Add-Migration -Name AccountFirstMigration -OutputDir Data\Account\Migrations -Context YourIS.Data.Account.AccountDbContext
