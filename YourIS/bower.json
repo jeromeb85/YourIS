@@ -9,7 +9,9 @@
     "tether": "v1.4.0",
     "jquery-ui": "1.12.1",
     "modernizr": "3.3.1",
-    "font-awesome": "4.7.0"
+    "font-awesome": "4.7.0",
+    "d3": "v4.7.1",
+    "fullcalendar" : "3.2.0"
   },
   "resolutions": {
     "jquery-validation": "1.16.0",
