@@ -18,11 +18,12 @@
     "font-awesome": "4.7.0",
     "fullcalendar": "3.2.0",
     "gmaps": "0.4.25",
+    "ionicons": "2.0.1",
     "jquery": "3.1.1",
     "jquery.gritter": "1.7.4",
     "jQuery.validVal": "5.0.2",
     "jquery-autocomplete": "1.1.1",
-    "jquery-ui": "1.12.1",    
+    "jquery-ui": "1.12.1",
     "jquery-validation": "1.16.0",
     "jquery-validation-unobtrusive": "3.2.6",
     "modernizr": "3.3.1",
@@ -33,7 +34,9 @@
     "plupload": "3.1.0",
     "screenfull": "3.0.2",
     "less": "2.7.2",
-      "timepicker": "1.11.10"
+    "timepicker": "1.11.10",
+    "jquery-slimscroll": "v1.3.8",
+    "fastclick": "v1.0.6"
   },
   "resolutions": {
     "jquery-validation": "1.16.0",

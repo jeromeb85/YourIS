@@ -8,6 +8,15 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-YourIS-955c63c6-6c98-43ec-8910-1c0423eebe23</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\main.css" />
+    <Content Include="wwwroot\css\skins.css" />
+    <Content Include="wwwroot\css\skins.min.css" />
+    <Content Include="wwwroot\js\app.js" />
+    <Content Include="wwwroot\js\app.min.js" />
+    <Content Include="wwwroot\js\demo.js" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
