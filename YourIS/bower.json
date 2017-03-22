@@ -36,7 +36,8 @@
     "less": "2.7.2",
     "timepicker": "1.11.10",
     "jquery-slimscroll": "v1.3.8",
-    "fastclick": "v1.0.6"
+    "fastclick": "v1.0.6",
+    "nanoscroller-nested": "0.8.8"
   },
   "resolutions": {
     "jquery-validation": "1.16.0",

@@ -15,10 +15,6 @@ body {
     height: 100%;
 }
 
-.layout-boxed html,
-.layout-boxed body {
-    height: 100%;
-}
 
 body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -44,23 +40,11 @@ body {
         clear: both;
     }
 
-.layout-boxed .wrapper {
-    max-width: 1250px;
-    margin: 0 auto;
-    min-height: 100%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-.layout-boxed {
-    background: url('../img/boxed-bg.jpg') repeat fixed;
-}
 /*
  * Content Wrapper - contains the main content
  * ```.right-side has been deprecated as of v2.0.0 in favor of .content-wrapper  ```
  */
 .content-wrapper,
-.right-side,
 .main-footer {
     -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
     -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
@@ -70,15 +54,8 @@ body {
     z-index: 820;
 }
 
-.layout-top-nav .content-wrapper,
-.layout-top-nav .right-side,
-.layout-top-nav .main-footer {
-    margin-left: 0;
-}
-
 @media (max-width: 767px) {
     .content-wrapper,
-    .right-side,
     .main-footer {
         margin-left: 0;
     }
@@ -86,15 +63,13 @@ body {
 
 @media (min-width: 768px) {
     .sidebar-collapse .content-wrapper,
-    .sidebar-collapse .right-side,
     .sidebar-collapse .main-footer {
         margin-left: 0;
     }
 }
 
 @media (max-width: 767px) {
-    .sidebar-open .content-wrapper,
-    .sidebar-open .right-side,
+    .sidebar-open .content-wrapper,    
     .sidebar-open .main-footer {
         -webkit-transform: translate(230px, 0);
         -ms-transform: translate(230px, 0);
@@ -103,8 +78,7 @@ body {
     }
 }
 
-.content-wrapper,
-.right-side {
+.content-wrapper {
     min-height: 100%;
     background-color: #ecf0f5;
     z-index: 800;
@@ -115,6 +89,10 @@ body {
     padding: 15px;
     color: #444;
     border-top: 1px solid #d2d6de;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-right : 230px;
 }
 /* Fixed layout */
 .fixed .main-header,
@@ -141,9 +119,6 @@ body {
     }
 }
 
-.fixed.layout-boxed .wrapper {
-    max-width: 100%;
-}
 
 body.hold-transition .content-wrapper,
 body.hold-transition .right-side,
@@ -225,9 +200,7 @@ a {
         border-radius: 0;
     }
 
-.layout-top-nav .main-header .navbar {
-    margin-left: 0;
-}
+
 
 .main-header #navbar-search-input.form-control {
     background: rgba(255, 255, 255, 0.2);
@@ -296,7 +269,7 @@ a {
     }
 
     .main-header .sidebar-toggle:hover,
-    .main-header .navbar-toggle:hover {
+    .main-header .navbar-toggle:hover{
         color: #fff;
     }
 
@@ -307,8 +280,8 @@ a {
         background: transparent;
     }
 
-    .main-header .sidebar-toggle .icon-bar,
-    .main-header .navbar-toggle .icon-bar {
+    .main-header .sidebar-toggle .icon-bar
+    .main-header .navbar-toggle .icon-bar{
         display: none;
     }
 
@@ -479,8 +452,7 @@ a {
  * Component: Sidebar
  * ------------------
  */
-.main-sidebar,
-.left-side {
+.main-sidebar {
     position: absolute;
     top: 0;
     left: 0;
@@ -495,15 +467,13 @@ a {
 }
 
 @media (max-width: 767px) {
-    .main-sidebar,
-    .left-side {
+    .main-sidebar {
         padding-top: 100px;
     }
 }
 
 @media (max-width: 767px) {
-    .main-sidebar,
-    .left-side {
+    .main-sidebar {
         -webkit-transform: translate(-230px, 0);
         -ms-transform: translate(-230px, 0);
         -o-transform: translate(-230px, 0);
@@ -512,8 +482,7 @@ a {
 }
 
 @media (min-width: 768px) {
-    .sidebar-collapse .main-sidebar,
-    .sidebar-collapse .left-side {
+    .sidebar-collapse .main-sidebar {
         -webkit-transform: translate(-230px, 0);
         -ms-transform: translate(-230px, 0);
         -o-transform: translate(-230px, 0);
@@ -522,8 +491,7 @@ a {
 }
 
 @media (max-width: 767px) {
-    .sidebar-open .main-sidebar,
-    .sidebar-open .left-side {
+    .sidebar-open .main-sidebar {
         -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0);
@@ -864,7 +832,6 @@ a {
 
 @media (min-width: 768px) {
     .control-sidebar-open .content-wrapper,
-    .control-sidebar-open .right-side,
     .control-sidebar-open .main-footer {
         margin-right: 230px;
     }

@@ -1,0 +1,33 @@
+{
+  "name": "nanoscroller-nested",
+  "description": "A jQuery plugin that offers a simplistic way of implementing Lion OS scrollbars.",
+  "version": "0.8.1",
+  "homepage": "http://jamesflorentino.github.com/nanoScrollerJS/",
+  "main": [
+    "./bin/css/nanoscroller.css",
+    "./bin/javascripts/jquery.nanoscroller.js"
+  ],
+  "keywords": [
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://jamesflorentino.github.com/nanoScrollerJS/blob/master/LICENSE-MIT"
+    }
+  ],
+  "author": {
+    "name": "James Florentino",
+    "email": "j@jamesflorentino.com",
+    "url": "http://www.jamesflorentino.com"
+  },
+  "dependencies": {
+    "jquery": ">= 1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6apxat/nanoScrollerJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamesflorentino/nanoScrollerJS/issues"
+  }
+}

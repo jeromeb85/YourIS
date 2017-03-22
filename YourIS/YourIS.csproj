@@ -10,12 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\css\main-old.css" />
     <Content Include="wwwroot\css\main.css" />
+    <Content Include="wwwroot\css\main2.css" />
     <Content Include="wwwroot\css\skins.css" />
     <Content Include="wwwroot\css\skins.min.css" />
     <Content Include="wwwroot\js\app.js" />
     <Content Include="wwwroot\js\app.min.js" />
     <Content Include="wwwroot\js\demo.js" />
+    <Content Include="wwwroot\maquette.html" />
+    <Content Include="wwwroot\maquette2.html" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
