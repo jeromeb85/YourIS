@@ -4,7 +4,7 @@
   "dependencies": {
     "animate-css": "3.5.2",
     "autosize": "3.0.20",
-    "bootstrap": "v3.3.7",
+    "bootstrap": "v4.0.0-alpha.6",
     "bootstrap-daterangepicker": "2.1.25",
     "bootstrap-progressbar": "0.9.0",
     "bootstrap-switch": "3.3.4",
