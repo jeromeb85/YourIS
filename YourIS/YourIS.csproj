@@ -10,11 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>        
-    <Content Include="wwwroot\css\main.scss" />
-    <Content Include="wwwroot\css\skins.scss" />
+    <Content Include="wwwroot\css\main.scss" />        
+    <Content Include="wwwroot\css\main2.scss" />
+    <Content Include="wwwroot\css\skins2.scss" />
     <Content Include="wwwroot\js\app.js" />
     <Content Include="wwwroot\js\app.min.js" />
     <Content Include="wwwroot\js\demo.js" />
+    <Content Include="wwwroot\maquette.html" />
     <Content Include="wwwroot\maquette2.html" />
   </ItemGroup>
   <ItemGroup>
