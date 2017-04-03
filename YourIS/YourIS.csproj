@@ -13,9 +13,14 @@
     <Content Include="wwwroot\css\main.scss" />        
     <Content Include="wwwroot\css\main2.scss" />
     <Content Include="wwwroot\css\skins2.scss" />
-    <Content Include="wwwroot\js\app.js" />
+    <Content Include="wwwroot\css\_bootstrap-variables.scss" />
+    <Content Include="wwwroot\css\_layout.scss" />
+    <Content Include="wwwroot\css\_variables.scss" />
+    <Content Include="wwwroot\js\app2.js" />
     <Content Include="wwwroot\js\app.min.js" />
-    <Content Include="wwwroot\js\demo.js" />
+    <Content Include="wwwroot\js\app2.min.js" />
+    <Content Include="wwwroot\js\demo2.js" />
+    <Content Include="wwwroot\js\main.js" />
     <Content Include="wwwroot\maquette.html" />
     <Content Include="wwwroot\maquette2.html" />
   </ItemGroup>
