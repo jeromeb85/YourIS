@@ -36,115 +36,115 @@
 .header-fixed .main-body-wrapper {
   margin-top: 55px; }
 
-.control-hidden .sidebar {
+.sidemenu-hidden .main-menu-sidebar {
   margin-left: -200px; }
 
-.control-fixed .sidebar {
+.sidemenu-fixed .main-menu-sidebar {
   position: fixed;
   height: 100%; }
-  .control-fixed .sidebar .sidebar-nav {
+  .sidemenu-fixed .main-menu-sidebar .sidebar-nav {
     height: calc(100vh - 55px); }
 
-.control-fixed .main, .control-fixed .app-footer {
+.sidemenu-fixed .main-content-wrapper, .sidemenu-fixed .main-footer {
   margin-left: 200px; }
 
-.control-fixed.sidebar-hidden .main, .control-fixed.sidebar-hidden .app-footer {
+.sidemenu-fixed.sidebar-hidden .main-content-wrapper, .sidemenu-fixed.sidebar-hidden .main-footer {
   margin-left: 0; }
 
-.control-off-canvas .sidebar {
+.sidemenu-control-off-canvas .main-menu-sidebar {
   position: fixed;
   z-index: 999;
   height: 100%; }
-  .control-off-canvas .sidebar .sidebar-nav {
+  .sidemenu-control-off-canvas .main-menu-sidebar .sidebar-nav {
     height: calc(100vh - 55px); }
 
-.control-compact .sidebar {
+.sidemenu-control-compact .main-menu-sidebar {
   flex: 0 0 50px; }
 
-.control-compact.sidebar-hidden .sidebar {
+.sidemenu-control-compact.sidemenu-hidden .main-menu-sidebar {
   margin-left: -50px; }
 
-.control-compact.sidebar-fixed .main, .control-compact.sidebar-fixed .app-footer {
+.sidemenu-control-compact.sidemenu-fixed .main-content-wrapper, .sidemenu-control-compact.sidemenu-fixed .main-footer {
   margin-left: 50px; }
 
-.control-compact.sidebar-fixed.sidebar-hidden .main, .control-compact.sidebar-fixed.sidebar-hidden .app-footer {
+.sidemenu-control-compact.sidemenu-fixed.sidemenu-hidden .main-content-wrapper, .sidemenu-control-compact.sidemenu-fixed.sidemenu-hidden .main-footer {
   margin-left: 0; }
 
-.aside-menu-hidden .aside-menu {
+.sidecontrol-hidden .main-control-sidebar {
   margin-right: -250px; }
 
-.aside-menu-fixed .aside-menu {
+.sidecontrol-fixed .main-control-sidebar {
   position: fixed;
   right: 0;
   height: 100%; }
-  .aside-menu-fixed .aside-menu .tab-content {
+  .sidecontrol-fixed .main-control-sidebar .tab-content {
     height: calc(100vh - 2.375rem - 55px); }
 
-.aside-menu-fixed .main, .aside-menu-fixed .app-footer {
+.sidecontrol-fixed .main-content-wrapper, .sidecontrol-fixed .main-footer {
   margin-right: 250px; }
 
-.aside-menu-fixed.aside-menu-hidden .main, .aside-menu-fixed.aside-menu-hidden .app-footer {
+.sidecontrol-fixed.sidecontrol-hidden .main-content-wrapper, .sidecontrol-fixed.sidecontrol-hidden .main-footer {
   margin-right: 0; }
 
-.aside-menu-off-canvas .aside-menu {
+.sidecontrol-off-canvas .main-control-sidebar {
   position: fixed;
   right: 0;
   z-index: 999;
   height: 100%; }
-  .aside-menu-off-canvas .aside-menu .tab-content {
+  .sidecontrol-off-canvas .main-control-sidebar .tab-content {
     height: calc(100vh - 2.375rem - 55px); }
 
-.footer-fixed .app-footer {
+.footer-fixed .main-footer {
   position: fixed;
   bottom: 0;
   z-index: 1000;
   width: 100%; }
 
-.footer-fixed .app-body {
+.footer-fixed .main-body-wrapper {
   margin-bottom: 50px; }
 
-.app-header,
-.app-footer,
-.sidebar,
-.main,
-.aside-menu {
+.main-header,
+.main-footer,
+.main-menu-sidebar,
+.main-content-wrapper,
+.main-control-sidebar {
   transition-duration: 0.25s, 0.25s;
   transition-property: margin-left, margin-right; }
 
 @media (max-width: 991px) {
-  .app-header {
+  .main-header {
     position: fixed !important;
     z-index: 1000;
     width: 100%; }
-    .app-header .navbar-toggler {
+    .main-header .navbar-toggler {
       position: absolute;
       top: 0;
       left: 0;
       width: 70px;
       height: inherit; }
-    .app-header .navbar-toggler {
+    .main-header .navbar-toggler {
       color: rgba(0, 0, 0, 0.3); }
-    .app-header .navbar-brand {
+    .main-header .navbar-brand {
       width: 100% !important;
       margin: 0 auto !important; }
-    .app-header .navbar-nav {
+    .main-header .navbar-nav {
       position: absolute;
       top: 0;
       right: 15px;
       height: inherit; }
-  .app-body {
+  .main-body-wrapper {
     margin-top: 55px; }
-  .sidebar {
+  .main-menu-sidebar {
     position: fixed;
     width: 220px;
     height: 100%;
     margin-left: -220px; }
-    .sidebar .sidebar-nav,
-    .sidebar .nav {
+    .main-menu-sidebar .sidebar-nav,
+    .main-menu-sidebar .nav {
       width: 220px !important; }
-  .main, .app-footer {
+  .main-body-wrapper, .main-footer {
     margin-left: 0 !important; }
-  .aside-menu {
+  .main-control-sidebar {
     margin-right: -250px; }
   .sidebar-mobile-show .sidebar {
     width: 220px;

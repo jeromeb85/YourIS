@@ -60,18 +60,18 @@
 }
 
 //
-// Sidebar control
+// Sidebar Menu
 //
-.control-hidden {
+.sidemenu-hidden {
 
-    .sidebar {
+    .main-menu-sidebar {
         margin-left: - $sidebar-width;
     }
 }
 
-.control-fixed {
+.sidemenu-fixed {
 
-    .sidebar {
+    .main-menu-sidebar {
         position: fixed;
         height: 100%;
 
@@ -80,20 +80,20 @@
         }
     }
 
-    .main, .app-footer {
+    .main-content-wrapper, .main-footer {
         margin-left: $sidebar-width;
     }
 
     &.sidebar-hidden {
 
-        .main, .app-footer {
+        .main-content-wrapper, .main-footer {
             margin-left: 0;
         }
     }
 }
 
-.control-off-canvas {
-    .sidebar {
+.sidemenu-control-off-canvas {
+    .main-menu-sidebar {
         position: fixed;
         z-index: $zindex-navbar - 1;
         height: 100%;
@@ -105,27 +105,27 @@
     }
 }
 
-.control-compact {
-    .sidebar {
+.sidemenu-control-compact {
+    .main-menu-sidebar {
         flex: 0 0 $sidebar-compact-width;
     }
 
-    &.sidebar-hidden {
+    &.sidemenu-hidden {
 
-        .sidebar {
+        .main-menu-sidebar {
             margin-left: - $sidebar-compact-width;
         }
     }
 
-    &.sidebar-fixed {
+    &.sidemenu-fixed {
 
-        .main, .app-footer {
+        .main-content-wrapper, .main-footer {
             margin-left: $sidebar-compact-width;
         }
 
-        &.sidebar-hidden {
+        &.sidemenu-hidden {
 
-            .main, .app-footer {
+            .main-content-wrapper, .main-footer {
                 margin-left: 0;
             }
         }
@@ -133,18 +133,18 @@
 }
 
 //
-// Aside Menu
+// Side COntrol
 //
-.aside-menu-hidden {
+.sidecontrol-hidden {
 
-    .aside-menu {
+    .main-control-sidebar {
         margin-right: - $aside-menu-width;
     }
 }
 
-.aside-menu-fixed {
+.sidecontrol-fixed {
 
-    .aside-menu {
+    .main-control-sidebar {
         position: fixed;
         right: 0;
         height: 100%;
@@ -154,20 +154,20 @@
         }
     }
 
-    .main, .app-footer {
+    .main-content-wrapper, .main-footer {
         margin-right: $aside-menu-width;
     }
 
-    &.aside-menu-hidden {
+    &.sidecontrol-hidden {
 
-        .main, .app-footer {
+        .main-content-wrapper, .main-footer {
             margin-right: 0;
         }
     }
 }
 
-.aside-menu-off-canvas {
-    .aside-menu {
+.sidecontrol-off-canvas {
+    .main-control-sidebar {
         position: fixed;
         right: 0;
         z-index: $zindex-navbar - 1;
@@ -184,14 +184,14 @@
 //
 .footer-fixed {
 
-    .app-footer {
+    .main-footer {
         position: fixed;
         bottom: 0;
         z-index: $zindex-navbar;
         width: 100%;
     }
 
-    .app-body {
+    .main-body-wrapper {
         margin-bottom: $footer-height;
     }
 }
@@ -199,11 +199,11 @@
 //
 // Animations
 //
-.app-header,
-.app-footer,
-.sidebar,
-.main,
-.aside-menu {
+.main-header,
+.main-footer,
+.main-menu-sidebar,
+.main-content-wrapper,
+.main-control-sidebar {
     transition-duration: $layout-transition-speed, $layout-transition-speed;
     transition-property: margin-left, margin-right;
 }
@@ -214,7 +214,7 @@
 
 @include media-breakpoint-down(md) {
 
-    .app-header {
+    .main-header {
         position: fixed !important;
         z-index: $zindex-navbar;
         width: 100%;
@@ -249,11 +249,11 @@
         }
     }
 
-    .app-body {
+    .main-body-wrapper {
         margin-top: $navbar-height;
     }
 
-    .sidebar {
+    .main-menu-sidebar {
         position: fixed;
         width: $mobile-sidebar-width;
         height: 100%;
@@ -265,11 +265,11 @@
         }
     }
 
-    .main, .app-footer {
+    .main-body-wrapper, .main-footer {
         margin-left: 0 !important;
     }
 
-    .aside-menu {
+    .main-control-sidebar {
         margin-right: - $aside-menu-width;
     }
 
