@@ -15,6 +15,8 @@
     <Content Include="wwwroot\css\skins2.scss" />
     <Content Include="wwwroot\css\_bootstrap-variables.scss" />
     <Content Include="wwwroot\css\_layout.scss" />
+    <Content Include="wwwroot\css\_mixin.scss" />
+    <Content Include="wwwroot\css\_sidemenu.scss" />
     <Content Include="wwwroot\css\_variables.scss" />
     <Content Include="wwwroot\js\app2.js" />
     <Content Include="wwwroot\js\app.min.js" />
