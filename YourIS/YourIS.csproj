@@ -13,6 +13,7 @@
     <Content Include="wwwroot\css\main.scss" />        
     <Content Include="wwwroot\css\main2.scss" />
     <Content Include="wwwroot\css\skins2.scss" />
+    <Content Include="wwwroot\css\_bootstrap-custom.scss" />
     <Content Include="wwwroot\css\_bootstrap-variables.scss" />
     <Content Include="wwwroot\css\_layout.scss" />
     <Content Include="wwwroot\css\_mixin.scss" />

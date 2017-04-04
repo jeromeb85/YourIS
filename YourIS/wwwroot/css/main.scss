@@ -4,10 +4,10 @@
 @import "../lib/bootstrap/scss/variables";
 @import "../lib/bootstrap/scss/mixins";
 
-@import "bootstrap-variables";
 @import "variables";
-
+@import "bootstrap-variables";
 @import "mixin";
+@import "bootstrap-custom";
 
 @import "layout";
 @import "sidemenu";
