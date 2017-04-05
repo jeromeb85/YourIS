@@ -1,0 +1,113 @@
+// Core variables and mixins
+@import "bootstrap-variables";
+@import "../lib/bootstrap/scss/variables";
+@import "custom-variables";
+@import "../lib/bootstrap/scss/mixins";
+@import "core/mixins";
+
+
+// Reset and dependencies
+@import "../lib/bootstrap/scss/normalize";
+@import "../lib/bootstrap/scss/print";
+
+// Core CSS
+@import "../lib/bootstrap/scss/reboot";
+@import "../lib/bootstrap/scss/type";
+@import "../lib/bootstrap/scss/images";
+@import "../lib/bootstrap/scss/code";
+@import "../lib/bootstrap/scss/grid";
+
+@import "../lib/bootstrap/scss/tables";
+@import "bootstrap_custom/tables";
+
+@import "../lib/bootstrap/scss/forms";
+
+@import "../lib/bootstrap/scss/buttons";
+@import "bootstrap_custom/buttons";
+
+// Components
+@import "../lib/bootstrap/scss/transitions";
+
+@import "../lib/bootstrap/scss/dropdown";
+@import "bootstrap_custom/dropdown";
+
+@import "../lib/bootstrap/scss/button-group";
+
+@import "../lib/bootstrap/scss/input-group";
+@import "bootstrap_custom/input-group";
+
+
+@import "../lib/bootstrap/scss/nav";
+@import "bootstrap_custom/nav";
+
+@import "../lib/bootstrap/scss/navbar";
+@import "bootstrap_custom/navbar";
+
+@import "../lib/bootstrap/scss/card";
+@import "bootstrap_custom/card";
+
+@import "../lib/bootstrap/scss/breadcrumb";
+@import "bootstrap_custom/breadcrumb";
+
+@import "../lib/bootstrap/scss/pagination";
+
+@import "../lib/bootstrap/scss/badge";
+@import "bootstrap_custom/badge";
+
+@import "../lib/bootstrap/scss/alert";
+
+@import "../lib/bootstrap/scss/progress";
+@import "bootstrap_custom/progress";
+
+@import "../lib/bootstrap/scss/media";
+@import "../lib/bootstrap/scss/list-group";
+@import "../lib/bootstrap/scss/responsive-embed";
+@import "../lib/bootstrap/scss/close";
+
+// Components w/ JavaScript
+@import "../lib/bootstrap/scss/modal";
+@import "bootstrap_custom/modal";
+
+@import "../lib/bootstrap/scss/tooltip";
+@import "../lib/bootstrap/scss/popover";
+@import "../lib/bootstrap/scss/carousel";
+
+// Utility classes
+@import "../lib/bootstrap/scss/utilities";
+
+// Vendors Styles
+@import "vendors/vendors";
+
+// CoreUI Styles
+// Additional typography
+@import "core/typography";
+
+// Animations
+@import "core/animate";
+
+// Core files
+@import "core/grid";
+@import "core/layout";
+@import "core/navigation";
+@import "core/aside";
+@import "core/loading";
+@import "core/widgets";
+@import "core/footer";
+@import "core/buttons";
+@import "core/others";
+@import "core/breadcrumb-menu";
+@import "core/avatars";
+@import "core/callout";
+@import "core/switches";
+@import "core/charts";
+@import "core/utilities-border";
+
+// Temporary fixes
+@import "core/temp";
+
+// Mobile View
+@import "core/mobile";
+
+// Right-to-left
+@import "core/rtl";
+

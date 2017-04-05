@@ -16,10 +16,10 @@
     "dropzone": "4.3.0",
     "elfinder": "2.1.22",
     "font-awesome": "4.7.0",
-    "fullcalendar": "3.2.0",
+    "fullcalendar": "v3.3.1",
     "gmaps": "0.4.25",
     "ionicons": "2.0.1",
-    "jquery": "3.1.1",
+    "jquery": "3.2.1",
     "jquery.gritter": "1.7.4",
     "jQuery.validVal": "5.0.2",
     "jquery-autocomplete": "1.1.1",
@@ -37,11 +37,13 @@
     "timepicker": "1.11.10",
     "jquery-slimscroll": "v1.3.8",
     "fastclick": "v1.0.6",
-    "nanoscroller-nested": "0.8.8"
+    "nanoscroller-nested": "0.8.8",
+    "simple-line-icons": "2.4.1"
   },
   "resolutions": {
     "jquery-validation": "1.16.0",
-    "jquery": "3.1.1",
-    "bootstrap": "v4.0.0-alpha.6"
+    "jquery": ">=1.9.1",
+    "bootstrap": "v4.0.0-alpha.6",
+    "fullcalendar": "v3.3.1"
   }
 }

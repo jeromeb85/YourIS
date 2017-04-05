@@ -2,5 +2,17 @@
   {
     "outputFile": "wwwroot/css/main.css",
     "inputFile": "wwwroot/css/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/style.css",
+    "inputFile": "wwwroot/css/style.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/main2.css",
+    "inputFile": "wwwroot/css/main2.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/skins2.css",
+    "inputFile": "wwwroot/css/skins2.scss"
   }
 ]

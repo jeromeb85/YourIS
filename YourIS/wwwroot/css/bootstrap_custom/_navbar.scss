@@ -1,50 +1,4 @@
-﻿//NAV
-
-.nav-tabs {
-
-    .nav-link {
-        color: $gray;
-
-        &.active {
-            color: $gray-dark;
-            background: #fff;
-            border-color: $border-color;
-            border-bottom-color: #fff;
-
-            &:focus {
-                background: #fff;
-                border-color: $border-color;
-                border-bottom-color: #fff;
-            }
-        }
-    }
-}
-
-
-
-.tab-content {
-    margin-top: -1px;
-    background: #fff;
-    border: 1px solid $border-color;
-
-    .tab-pane {
-        padding: $spacer-y $spacer-x;
-    }
-}
-
-
-
-.card-block {
-
-    .tab-content {
-        margin-top: 0;
-        border: 0;
-    }
-}
-
-//NAVBAR
-
-.navbar {
+header.navbar {
     position: relative;
     flex-direction: row;
     height: $navbar-height;
@@ -65,6 +19,29 @@
         background-position: center center;
         background-size: $navbar-brand-logo-size;
         @include borders($navbar-brand-border);
+    }
+
+    .navbar-brand-logo {
+        display: inline-block;
+        float: left;
+        height: $navbar-height;
+        font-size: 20px;
+        line-height: $navbar-height;
+        text-align: center;
+        vertical-align: central;
+        margin-right: 0;
+        width: $navbar-brand-width;
+        padding: $navbar-padding-y $navbar-padding-x;
+        padding: $navbar-padding-y $navbar-padding-x;
+        @include borders($navbar-brand-border);
+
+        .logo-lg {
+            display: block;
+        }
+
+        .logo-mini {
+            display: none;
+        }
     }
 
     .navbar-nav {
@@ -108,6 +85,14 @@
 }
 
 .navbar-brand {
+  color: $navbar-active-color;
+
+  @include hover-focus {
+    color: $navbar-active-color;
+  }
+}
+
+.navbar-brand-logo {
     color: $navbar-active-color;
 
     @include hover-focus {
@@ -116,24 +101,24 @@
 }
 
 .navbar-nav {
-    .nav-link {
-        color: $navbar-color;
+  .nav-link {
+    color: $navbar-color;
 
-        @include hover-focus {
-            color: $navbar-hover-color;
-        }
+    @include hover-focus {
+      color: $navbar-hover-color;
     }
+  }
 
-    .open > .nav-link,
-    .active > .nav-link,
-    .nav-link.open,
-    .nav-link.active {
-        @include plain-hover-focus {
-            color: $navbar-active-color;
-        }
+  .open > .nav-link,
+  .active > .nav-link,
+  .nav-link.open,
+  .nav-link.active {
+    @include plain-hover-focus {
+      color: $navbar-active-color;
     }
+  }
 }
 
 .navbar-divider {
-    background-color: rgba(0,0,0,.075);
+  background-color: rgba(0,0,0,.075);
 }

@@ -38,14 +38,15 @@
     "!/CHANGELOG.*",
     "!/CONTRIBUTING.*"
   ],
-  "version": "3.2.0",
-  "_release": "3.2.0",
+  "version": "3.3.1",
+  "_release": "3.3.1",
   "_resolution": {
     "type": "version",
-    "tag": "v3.2.0",
-    "commit": "9acc78d118e5026bf852a9c135b48a4a79164481"
+    "tag": "v3.3.1",
+    "commit": "707b6061a449ca8bd5fe9831ba1d3f6ca6572a4b"
   },
   "_source": "https://github.com/fullcalendar/fullcalendar.git",
-  "_target": "3.2.0",
-  "_originalSource": "fullcalendar"
+  "_target": "v3.3.1",
+  "_originalSource": "fullcalendar",
+  "_direct": true
 }
