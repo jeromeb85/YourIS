@@ -18,21 +18,7 @@ header.navbar {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: $navbar-brand-logo-size;
-        @include borders($navbar-brand-border);
-    }
-
-    .navbar-brand-logo {
-        display: inline-block;
-        float: left;
-        height: $navbar-height;
-        font-size: 20px;
-        line-height: $navbar-height;
-        text-align: center;
-        vertical-align: central;
-        margin-right: 0;
-        width: $navbar-brand-width;
-        padding: $navbar-padding-y $navbar-padding-x;
-        padding: $navbar-padding-y $navbar-padding-x;
+        overflow: hidden;
         @include borders($navbar-brand-border);
 
         .logo-lg {
@@ -43,6 +29,8 @@ header.navbar {
             display: none;
         }
     }
+
+
 
     .navbar-nav {
         flex-direction: row;

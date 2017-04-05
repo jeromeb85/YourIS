@@ -2758,23 +2758,11 @@ header.navbar {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70px auto;
+    overflow: hidden;
     border-bottom: 1px solid #cfd8dc; }
-  header.navbar .navbar-brand-logo {
-    display: inline-block;
-    float: left;
-    height: 55px;
-    font-size: 20px;
-    line-height: 55px;
-    text-align: center;
-    vertical-align: central;
-    margin-right: 0;
-    width: 155px;
-    padding: 0.5rem 1rem;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid #cfd8dc; }
-    header.navbar .navbar-brand-logo .logo-lg {
+    header.navbar .navbar-brand .logo-lg {
       display: block; }
-    header.navbar .navbar-brand-logo .logo-mini {
+    header.navbar .navbar-brand .logo-mini {
       display: none; }
   header.navbar .navbar-nav {
     flex-direction: row;
